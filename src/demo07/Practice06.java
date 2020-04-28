@@ -4,6 +4,12 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Practice06 {
+    private static final int EASY_HARD_RANDOM_NUM= 10;
+    private static final int MID_HARD_RANDOM_NUM = 100;
+    private static final int HIGH_HARD_RANDOM_NUM = 1000;
+    private static final int GAME_GRADE_MAX = 3;
+    private static final int GAME_GRADE_MIN = 0;
+
     public static void main(String[] args) {
         Practice06 p = new Practice06();
         p.print();
@@ -12,18 +18,18 @@ public class Practice06 {
 
     public  int easyHardRandom() {
         Random random = new Random();
-        int easyHardRandomNum = random.nextInt(10);
+        int easyHardRandomNum = random.nextInt(EASY_HARD_RANDOM_NUM );
         return easyHardRandomNum;
     }
 
     public  int midHardRandom(){
         Random random = new Random();
-        int midHardRandomNum = random.nextInt(100);
+        int midHardRandomNum = random.nextInt(MID_HARD_RANDOM_NUM );
         return  midHardRandomNum;
     }
     public int highHardRandom(){
         Random random = new Random();
-        int highHardRandom = random.nextInt(1000);
+        int highHardRandom = random.nextInt(HIGH_HARD_RANDOM_NUM);
         return highHardRandom;
     }
     public  void print() {
@@ -37,7 +43,7 @@ public class Practice06 {
     public void option() {
         Scanner scanner = new Scanner(System.in);
         int gameGrade = scanner.nextInt();
-        while (gameGrade > 3 || gameGrade < 0) {
+        while (gameGrade > GAME_GRADE_MAX || gameGrade < GAME_GRADE_MIN) {
             System.out.println("输入错误，请重新输入0-3之间的数：");
             gameGrade = scanner.nextInt();
         }
