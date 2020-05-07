@@ -65,15 +65,12 @@ public class Main {
                 maxIndex = i;
             }
         }
+        System.out.println("最高价出售的蛋糕信息为：");
+        System.out.println("id为：" + cakes[maxIndex].id);
+        System.out.println("价格为：" + cakes[maxIndex].price);
         if (maxIndex > 5) {
-            System.out.println("最高价出售的蛋糕信息为：");
-            System.out.println("id为：" + cakes[maxIndex].id);
-            System.out.println("价格为：" + cakes[maxIndex].price);
             System.out.println("数量为：" + ((ReadyMakeCake) cakes[maxIndex]).getQuantity());
         } else {
-            System.out.println("最高价出售的蛋糕信息为：");
-            System.out.println("id为：" + cakes[maxIndex].id);
-            System.out.println("价格为：" + cakes[maxIndex].price);
             System.out.println("重量为：" + ((OrderCake) cakes[maxIndex]).getWeightInKG());
         }
     }
