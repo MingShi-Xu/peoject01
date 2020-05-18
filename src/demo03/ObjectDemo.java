@@ -35,7 +35,8 @@ public class ObjectDemo {
         Fridge fridge = createFridge(500);
         Lion lion = createLion(400);
         putInElephant(elephant,fridge);
-        putInElephant(elephant,fridge); // 判断冰箱里是否放入大象
+        putInElephant(elephant,fridge);
+        // 判断冰箱里是否放入大象
         fridge.store(lion);
 //        fridge.remove();
     }
