@@ -4,12 +4,12 @@ package club.banyuan.pair;
 import club.banyuan.practice02.Measurable;
 
 public class PairUtil {
-    public static <T> Pair swap(Pair pair){
-        Pair p = new Pair(11,22);
+    public static <T> Pair<T> swap(Pair<T> pair){
+        Pair<T> p = new Pair<>(pair.getFirst(),pair.getSecond());
         p.swap();
         return p;
     }
-    public static <T> Pair minMax(Measurable[] measurables){
+    public static <T> Pair<T> minMax(Measurable[] measurables){
         for (int i = 0; i < measurables.length; i++) {
 
         }

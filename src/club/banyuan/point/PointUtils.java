@@ -1,4 +1,5 @@
 package club.banyuan.point;
+
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Iterator;
@@ -11,10 +12,14 @@ public class PointUtils {
         /* 这等效于实验室中提到的初始化步骤。 */
         Iterator<Point> pointIterator = points.iterator();
         // TODO 使用迭代器完成此方法!
+        Point rlt = points.get(0);
         while(pointIterator.hasNext()){
-
+            Point next = pointIterator.next();
+            if (next.getY() > rlt.getY()){
+                rlt = next;
+            }
         }
-        return null;
+        return rlt;
     }
 
     /**
@@ -23,6 +28,13 @@ public class PointUtils {
     public static Point centroid(List<Point> points) {
         Iterator<Point> pointIterator = points.iterator();
         // TODO 使用迭代器完成此方法!
+        int sumX = 0;
+        int sumY = 0;
+        while (pointIterator.hasNext()){
+            Point point = pointIterator.next();
+            sumX += point.getX();
+            sumY += point.getY();
+        }
         return null;
     }
 

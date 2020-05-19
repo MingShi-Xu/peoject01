@@ -2,7 +2,6 @@ package club.banyuan.human;
 
 import club.banyuan.animal.Cat;
 import club.banyuan.animal.Dog;
-import club.banyuan.human.Person;
 
 public class Main {
 

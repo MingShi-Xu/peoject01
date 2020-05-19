@@ -1,5 +1,6 @@
 package club.banyuan.sale;
 
+
 import java.util.Scanner;
 
 public class VendingMachine {

@@ -1,8 +1,8 @@
 package club.banyuan.may18;
 
-public interface Measurer<Object> {
+public interface Measurer<T> {
     /**
      * 计算对象的数量.
      */
-    double measure(Object anObject);
+    double measure(T anObject);
 }
